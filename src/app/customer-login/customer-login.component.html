@@ -1,0 +1,18 @@
+<div class="login-container">
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Customer Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form (ngSubmit)="customerLogin()">
+            <mat-form-field class="full-width">
+                <input type="email" matInput placeholder="User name" [ngModel]="userName" name="userName" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input type="password" matInput placeholder="Password" [ngModel]="password" name="password" required>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">Login</button>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div>
